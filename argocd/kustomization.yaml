@@ -11,6 +11,5 @@ resources:
   - applications/monitoring.yaml
   - applications/monitoring-rules.yaml
   - applications/grafana-dashboard.yaml
-  - applications/alertmanager-secret.yaml
   - applications/rbac.yaml
   - applications/metrics-server.yaml
