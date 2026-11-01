@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/purnima202/k8s-gitops-config.git
     targetRevision: main
-    path: monitoring/prometheus
+    path: monitoring/prometheus-rules
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
