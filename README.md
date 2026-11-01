@@ -25,18 +25,18 @@ Each service has an independent Helm chart containing:
 
 ```text
 k8s-gitops-config/
-├── apps/
-│   ├── catalog/
-│   ├── orders/
-│   └── payments/
+apps/
+├── catalog/
+│   ├── values.yaml
+│   ├── values-dev.yaml
+│   └── values-prod.yaml
+├── orders/
+└── payments/
 ├── argocd/
 │   ├── applications/
 │   ├── projects/
 │   ├── root-app.yaml
 │   └── kustomization.yaml
-├── environments/
-│   ├── dev/
-│   └── prod/
 ├── monitoring/
 │   ├── prometheus/
 │   ├── grafana/
