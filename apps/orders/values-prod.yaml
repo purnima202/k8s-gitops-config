@@ -1,0 +1,4 @@
+replicaCount: 3
+
+ingress:
+  host: orders.example.com

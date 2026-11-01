@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - projects/gitops-project.yaml
+  - applications/catalog-dev.yaml
+  - applications/orders-dev.yaml
+  - applications/payments-dev.yaml
+  - applications/catalog-prod.yaml
+  - applications/orders-prod.yaml
+  - applications/payments-prod.yaml
+  - applications/monitoring.yaml
+  - applications/monitoring-rules.yaml
+  - applications/grafana-dashboard.yaml
+  - applications/alertmanager-secret.yaml
+  - applications/rbac.yaml
+  - applications/metrics-server.yaml

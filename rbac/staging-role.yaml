@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: staging-developer
+  namespace: staging
+rules:
+  - apiGroups: ["", "apps"]
+    resources: ["pods", "services", "deployments", "configmaps"]
+    verbs: ["get", "list", "watch"]
+  - apiGroups: ["apps"]
+    resources: ["deployments"]
+    verbs: ["update", "patch"]

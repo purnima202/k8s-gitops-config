@@ -1,0 +1,4 @@
+replicaCount: 2
+
+ingress:
+  host: catalog.dev.example.com
